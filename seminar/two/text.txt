@@ -2,12 +2,12 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2023-07-03T20:47:06.256344800Z</date>
-  <millis>1688417226256</millis>
-  <nanos>344800</nanos>
+  <date>2023-07-03T20:44:32.493980800Z</date>
+  <millis>1688417072493</millis>
+  <nanos>980800</nanos>
   <sequence>0</sequence>
   <level>INFO</level>
-  <class>java_project.seminar.two.Main3</class>
+  <class>java_project.Home_work.two.Main</class>
   <method>writeToFile</method>
   <thread>1</thread>
   <message>Запись успешно выполнена</message>

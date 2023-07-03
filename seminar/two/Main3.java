@@ -1,4 +1,4 @@
-package Java_project.seminar.two;
+package java_project.seminar.two;
 
 import java.io.File;
 import java.io.FileWriter;

@@ -1,4 +1,4 @@
-package Java_project.Home_work.one;
+package java_project.Home_work.one;
 
 /*
  * Вывести все простые числа от 1 до 1000
