@@ -1,4 +1,4 @@
-package java_project.seminar.one;
+package Java_project.seminar.one;
 
 public class Main2 {
     /*
