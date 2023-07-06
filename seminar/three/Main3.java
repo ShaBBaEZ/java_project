@@ -34,7 +34,6 @@ public class Main3 {
                 return; 
             }
         }
-
         List<String> list = new ArrayList<>();
         list.add(genreBook);
         list.add(nameBook);
