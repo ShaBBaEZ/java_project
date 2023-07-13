@@ -1,4 +1,4 @@
-package java_project.seminar.four;
+package Java_project.seminar.four;
 /*
  * Реализовать стэк с помощью массива
  * нужно реализовать методы

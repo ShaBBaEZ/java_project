@@ -1,4 +1,4 @@
-package java_project.Home_work.four;
+package Java_project.Home_work.four;
 
 import java.util.Iterator;
 import java.util.LinkedList;

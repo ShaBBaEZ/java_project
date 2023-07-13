@@ -1,4 +1,4 @@
-package java_project.Home_work.four;
+package Java_project.Home_work.four;
 /*
  * Реализуйте очередь с помощью LinkedList со следующими методами:
  * enqueue() - помещает элемент в конец очереди, 

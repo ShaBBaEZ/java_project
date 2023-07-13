@@ -1,4 +1,4 @@
-package java_project.Home_work.four;
+package Java_project.Home_work.four;
 /*
  * Пусть дан LinkedList с несколькими элементами. 
  * Реализуйте метод, который вернет “перевернутый” список. 

@@ -1,4 +1,4 @@
-package java_project.seminar.four;
+package Java_project.seminar.four;
 
 public class MyStack {
     String[] arr = new String[10];

@@ -1,4 +1,4 @@
-package java_project.Home_work.three;
+package Java_project.Home_work.three;
 
 import java.util.ArrayList;
 import java.util.Arrays;

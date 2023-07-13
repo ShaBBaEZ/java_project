@@ -1,4 +1,4 @@
-package java_project.Home_work.two;
+package Java_project.Home_work.two;
 /*
  * Дана json строка вида:
 String json = "[{\"фамилия\":\"Иванов\",\"оценка\":\"5\",\"предмет\":\"Математика\"}," +
