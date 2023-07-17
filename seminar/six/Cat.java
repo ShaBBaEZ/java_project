@@ -24,14 +24,14 @@ public class Cat {
         return "numPassports: " + numPassport + ", owner: " + owner + ", name: " + name + ", age: " + age + ", color: " + color;
     }
 
-    public boolean equals(Object obj){// метод для сравнения
-        if (this == obj){
-            return true;
-        }
-        if(!(obj instanceof Cat)){// проверяем входит ли наш объект в класс Cat если нет то нет смысла сравнивать но HashCode всё равно будет разный и приложение будет считать что это разные объекты
-            return false;
-        }
-        Cat cat = (Cat) obj;
-        return numPassport == cat.numPassport && name.equalsIgnoreCase(cat.name) && owner.equalsIgnoreCase(cat.owner); // можно так же добавить и 
-    }
+    // public boolean equals(Object obj){// метод для сравнения
+    //     if (this == obj){
+    //         return true;
+    //     }
+    //     if(!(obj instanceof Cat)){// проверяем входит ли наш объект в класс Cat если нет то нет смысла сравнивать но HashCode всё равно будет разный и приложение будет считать что это разные объекты
+    //         return false;
+    //     }
+    //     Cat cat = (Cat) obj;
+    //     return numPassport == cat.numPassport && name.equalsIgnoreCase(cat.name) && owner.equalsIgnoreCase(cat.owner); // можно так же добавить и 
+    // }
 }

@@ -43,14 +43,14 @@ public class Main2 {
         set.add(cat2);
         set.add(cat3);
         set.add(cat4);
-
+        
         // System.out.println(cat3.equals(cat4));// сравниваем объекты
 
         for (Cat cat: set){// перебор коллекции set для вывода 
             System.out.println(cat);
         }
 
-        List<Cat> res = new ArrayList<>();
+        List<Cat> res = new ArrayList<>();// фильтрация для дз
         for (Cat cat: set){
             if (cat.age == 8){
                 res.add(cat);
