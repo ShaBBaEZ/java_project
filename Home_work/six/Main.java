@@ -13,13 +13,10 @@ package Java_project.Home_work.six;
 Отфильтровать ноутбуки из первоначального множества и вывести проходящие по условиям.
  */
 
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
+
 
 
 
@@ -54,33 +51,32 @@ public class Main {
     public static void printmenu(){// Основное меню
         System.out.println("1.Вывести список всех ноутбуков с характеристиками.");
         System.out.println("2.Выбрать фильтры для ноутбука.");
-        System.out.println("3.Вывод ноутбуков по фильтру.");
-        System.out.println("4.Сбросить фильтр.");
-        System.out.println("5.Выход.");
+        System.out.println("3.Выход.");
     }
 
     public static void start(Set<Notebook> set){
+        int key = 0;
+        while(key != 3){
         printmenu();
         System.out.println("Введите пункт меню: ");
         Scanner scanner = new Scanner(System.in);
-        int key = scanner.nextInt();
-        switch(key) {
+        key = scanner.nextInt();
+            switch(key) {   
             case 1:
                 allNotebook(set);
                 start(set);
             case 2:
+                filter(set);;
             case 3:
-            case 4:
-            case 5:
                 break;
             default:
-                System.out.println("Вы вввели неправильное значение меню \n");
-                start(set);
+                System.out.println("\n\n\nВы ввели неправильное значение\n\n\n");
+                break;
+            }
         }
-       
     }
 
-    public static void allNotebook (Set<Notebook> set){// метод вывода всех ноутбуков case 1
+    public static void allNotebook (Set<Notebook> set){// метод вывода ноутбуков так же выводит отфильтрованные
         for (Notebook notebook: set){
             System.out.println(notebook);
         }
@@ -94,33 +90,71 @@ public class Main {
         System.out.println("5.Фильтр по объёму HDD");
         System.out.println("6.Фильтр по ОС");
         System.out.println("7.Фильтр по стоимости");
-        System.out.println("8.Назад");
+        System.out.println("8.Сбросить фильтр");
+        System.out.println("9.Показать ноутбуки по фильтру");
+        System.out.println("10.Назад");
     }
     public static void filter(Set<Notebook> set){
+        Set<Notebook> filterSet = new HashSet<>();
+        Scanner scanner = new Scanner(System.in);
+        int key = 0;
+        while(key != 10){
         filterMenu();
         System.out.println("Введите пункт меню: ");
-        Scanner scanner = new Scanner(System.in);
-        int key = scanner.nextInt();
+        key = scanner.nextInt();
         switch(key){
             case 1:
-                Map<Integer,String> map = new HashMap<>();
-                Integer i = 1;
-                for (Notebook notebook: set){
-                    map.add(i, );
-                    i++;
-                }
-                
+
+                break;
             case 2:
-            case 3:
-            case 4:
+                break;
+            case 3: 
+                break;
+            case 4:  
+                break;
             case 5:
+                break;
             case 6:
+                break;
             case 7:
+                int min = 0;
+                int max = 9999999;
+                System.out.println("Введите минимальное значение или поставьте 0 если фильтр не нужен: ");
+                int a = scanner.nextInt();
+                System.out.println("Введите максимальное значение или поставьте 0 если фильтр не нужен : ");
+                int b = scanner.nextInt();
+                if(a != 0){
+                    min = a;
+                }
+                if(b != 0){
+                    max = b;
+                }
+                if (filterSet.size() == 0){
+                    for (Notebook notebook: set){
+                        if (notebook.price > min && notebook.price < max){
+                            filterSet.add(notebook);
+                            }
+                        }
+                    }
+                for (Notebook notebook: filterSet){
+                    if (notebook.price > min && notebook.price < max){
+                        filterSet.add(notebook);
+                        }
+                }   
+                break; 
             case 8:
-                printmenu();
+                filterSet.clear();
+                System.out.println("\n\n\nФильтр сброшен\n\n\n");
+                break;
+            case 9:
+                allNotebook(filterSet);
+                break;
+            case 10:
+                start(set);
+                break;
             default:
-                System.out.println("Вы вввели неправильное значение меню \n");
-                filterMenu();
+                System.out.println("\n\n\nВы ввели неправильное значение\n\n\n");
+            }
         }
     }
 }
